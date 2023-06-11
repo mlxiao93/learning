@@ -1,0 +1,30 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html -p 1234"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "file:../react/build/node_modules/react",
+    "react-dom": "file:../react/build/node_modules/react-dom"
+  },
+  "devDependencies": {
+    "@types/react": "17.x",
+    "@types/react-dom": "17.x",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "2.8.7"
+  }
+}

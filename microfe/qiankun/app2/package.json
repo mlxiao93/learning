@@ -1,0 +1,19 @@
+{
+  "name": "qiankun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html -p 1232"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/transformer-sass": "2.8.3",
+    "@popperjs/core": "^2.11.8",
+    "@types/bootstrap": "^5.2.6",
+    "bootstrap": "^5.3.0",
+    "qiankun": "2.10.7"
+  }
+}

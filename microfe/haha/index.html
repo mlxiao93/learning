@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <h5>父元素</h5>
+    </div>
+
+    <div id="app1">
+      <style>
+        * {
+          color: red;
+        }
+      </style>
+
+      <h5>子元素</h5>
+
+      <p class="title">一行文字</p>
+    </div>
+
+    <script>
+      function openShadow(domNode) {
+        var shadow = domNode.attachShadow({ mode: 'open' });
+
+        shadow.innerHTML = domNode.innerHTML;
+
+        domNode.innerHTML = '';
+      }
+
+      var bodyNode = document.getElementById('app1');
+
+      openShadow(bodyNode);
+    </script>
+  </body>
+</html>

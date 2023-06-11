@@ -1,0 +1,23 @@
+.tabs {
+  display: flex;
+}
+
+.tab-item {
+  padding: 1em 2em;
+  &--active {
+    color: cadetblue;
+  }
+}
+
+.tab-container {
+  overflow: auto;
+  position: relative;
+  height: 80vh;
+  border: 1px solid #eee;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
