@@ -1,0 +1,37 @@
+.waterfall {
+
+}
+
+.item {
+  height: 100px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: tan;
+  border: 1px solid #eee;
+  width: 49%;
+
+  float: left;
+  clear: none;
+
+  &:nth-child(1) {
+    height: 80px;
+  }
+  &:nth-child(2) {
+    height: 150px;
+  }
+  &:nth-child(3) {
+    height: 60px;
+  }
+  &:nth-child(4) {
+    height: 40px;
+  }
+  &:nth-child(5) {
+    height: 120px;
+  }
+  &:nth-child(6) {
+    height: 90px;
+  }
+
+}

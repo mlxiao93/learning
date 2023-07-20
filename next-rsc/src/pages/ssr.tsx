@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation';
 
 export default function SSR() {
   const searchParams = useSearchParams();
-  const kwd = searchParams.get('kwd') || '';
+  const kwd = searchParams?.get('kwd') || '';
 
   // console.log('~~~kwd', kwd);
 

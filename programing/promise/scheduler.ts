@@ -34,3 +34,15 @@ export class Scheduler {
     return taskResPromise;
   };
 }
+
+
+// 一个简单版的
+function run(tasks: (() => Promise<any>)[], limit: number) {
+  if (!tasks.length) return;
+  for (let i = 0; i < limit; i++) {
+    const task = tasks.shift()!;
+    task().finally(() => {
+      run(tasks, 1);
+    });
+  }
+}
